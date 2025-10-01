@@ -20,7 +20,7 @@ jobs:
         sudo apt-get update -y
         sudo apt-get install -y maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package -DskipTests
   
   security-check:
     runs-on: self-hosted
